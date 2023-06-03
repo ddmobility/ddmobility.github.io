@@ -15,7 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Maixnor Books</title>
+    <title>Privacy - Data Driven Mobility</title>
   </head>
   <body class="text-gray-900 antialiased">
     <nav
@@ -60,7 +60,7 @@
                 ><i
                   class="fab fa-instagram text-3xl leading-lg"
                 ></i
-                ><span class="lg:hidden inline-block ml-2">Share</span></a
+                ><span class="lg:hidden inline-block ml-2">Post</span></a
               >
             </li>
             <li class="flex items-center">
@@ -171,25 +171,12 @@
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
-                <h3 class="text-3xl font-semibold">Maixnor e.U.<br>Inhaber Benjamin Meixner</h3>
+                <h3 class="text-3xl font-semibold">Benjamin Meixner</h3>
                 <p class="mt-4 text-lg leading-relaxed text-gray-600 break-normal">
                   <span class="whitespace-pre-line">
-                  Eingetragenes Unternehmen
-
-                  Buchsommelier
-                  
-                  FN: 587772 x
-                  FB-Gericht: Wiener Neustadt
-                  Sitz: 2331 Vösendorf
-                  Fritz Schmeroldgasse 36 | Austria 
+                  2331 Vösendorf, Austria
                   Tel: +43 680 2456552 
-                  Email: hello@maixnor.com
-
-                  Mitglied der WKO und WKNO
-
-                  Fachgruppe für Buch- und Medienwirtschaft
-
-                  Bezirkshauptmannschaft Mödling
+                  Email: benjamin@meixner.org
 
                   </span>
                   Verbraucher haben die Möglichkeit, Beschwerden an die Online 
@@ -227,9 +214,9 @@
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap">
           <div class="w-full lg:w-6/12 px-4">
-            <h4 class="text-3xl font-semibold">Folge Uns!</h4>
+            <h4 class="text-3xl font-semibold">Follow Us!</h4>
             <h5 class="text-lg mt-0 mb-2 text-gray-700">
-              Du kannst uns auf allen diesen Plattformen folgen. 
+              You can reach us on all these platforms. 
             </h5>
             <div class="mt-2 flex flex-row space-x-4">
 
@@ -268,13 +255,13 @@
               <div class="w-full lg:w-4/12 px-4 ml-auto pt-4">
                 <span
                   class="block uppercase text-gray-600 text-sm font-semibold mb-2"
-                  >Hilfreiche Links</span
+                  >Helpful link</span
                 >
                 <ul class="list-unstyled">
                   <li>
                     <a
                       class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.github.com/maixnor/maixnor-web"
+                      href="https://www.github.com/ddmobility/web"
                       >Github Repo</a
                     >
                   </li>
@@ -291,7 +278,7 @@
         >
           <div class="w-full md:w-4/12 px-4 mx-auto text-center">
             <div class="text-sm text-gray-600 font-semibold py-1">
-              Copyright © 2022 von Maixnor e.U.
+              Copyright © 2022
               <!-- <a
                 href="https://github.com/maixnor"
                 class="text-blue-500 hover:text-gray-900"
@@ -320,7 +307,7 @@
     }
 
     // get current commit
-    fetch('https://api.github.com/repos/maixnor/maixnor-web/commits/main').then(response =>{
+    fetch('https://api.github.com/repos/ddmobility/web/commits/main').then(response =>{
       return response.json();
     }).then(data =>{
       document.getElementById('commit').setAttribute('href', data.html_url);
@@ -328,7 +315,7 @@
     })
     
     // get current action
-    fetch('https://api.github.com/repos/maixnor/maixnor-web/actions/runs').then(response =>{
+    fetch('https://api.github.com/repos/ddmobility/web/actions/runs').then(response =>{
       return response.json();
     }).then(data =>{
       document.getElementById('build').setAttribute('href', data.workflow_runs[0].html_url);
